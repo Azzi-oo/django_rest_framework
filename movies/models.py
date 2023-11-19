@@ -82,8 +82,6 @@ class Goal(models.Model):
         
         def budgets(self):
             return self.filter(goal_type=enums.GoalType.SPENDING)
-        
 
-    
-        
-        
+        # budgets = Goal.objects.budgets()
+
